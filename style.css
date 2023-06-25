@@ -1,0 +1,180 @@
+/* BLOCKS */
+    /* GLOBAL */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Inter';
+    font-size: 10px;
+    padding: 10rem 25vh;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+b {
+    font-weight: 500;
+}
+
+    /* LOCAL */
+
+.header {
+    background-color: #d4d4d4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);;
+    grid-column: span 2;
+}
+
+.footer {
+    background-color: #d4d4d4;
+    display: flex;
+    grid-column: span 2;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px 20px;
+    background-color: #d4d4d4;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.double {
+    grid-column: span 2;
+}
+
+.picture-mv {
+    height: 40em;
+    grid-column: span 2;
+    background-image: url(images/01_picture-mv.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #d4d4d4;
+}
+
+.words-center {
+    width: 800px;
+    margin: 0 auto;
+    grid-column: span 2;
+    background-color: #d4d4d4;
+    text-align: center;
+}
+
+
+
+
+/* TEXT */
+
+p {
+    font-size: 1.5rem;
+    padding: 0px;
+    margin: 0;
+}
+
+.short {
+    position: absolute;
+    width: 150px;
+}
+
+a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.grey {
+    color: #999999;
+}
+
+.inside {
+    font-size: 15px;
+}
+
+
+
+/* ID TAGS */
+
+#round-corners {
+    font-size: 1.5rem;
+    padding: 0.5em;
+    margin-right: 0.3em;
+    font-weight: 500;
+
+    border-radius: 2.0em;
+    border: 1px solid #000000;
+}
+
+#round-corners-preview {
+    border-radius: 2.0rem;
+    margin-top: 1rem;
+    height: 35rem;
+    /* background-color: #969696; */
+}
+
+#round-corners-cover {
+    border-radius: 2.0em;
+    margin-top: 1em;
+    height: 70em;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: #969696; */
+}
+
+#short-width {
+    width: 1fr;
+    font-weight: 500;
+    text-align: center;
+    align-self: center;
+}
+
+#justify-e {
+    justify-self: end;
+    padding: 1rem 0;
+}
+
+#h2 {
+    font-weight: 500;
+}
+
+
+
+/* ADDITION */
+.mt-80 {
+    margin-top: 6rem;
+}
+
+.mt-40 {
+    margin-top: 3rem;
+}
+
+.mt-20 {
+    margin-top: 1.5rem;
+}
+
+
+
+/* MEDIA */
+
+@media (max-width: 1310px) {
+    html {
+        font-size: 8px;
+    }
+
+    .words-center {
+        width: 500px;
+    }
+}
